@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Dekko&family=Playpen+Sans:wght@100..800&family=Sofadi+One&display=swap');
+
+:root{
+    --primary: #34d1bf;
+    --red: #d13456;
+    --dark: #070707;
+    --grey: #cccccc;
+}
+
+body{
+    font-family: "Dekko", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+    margin-top: 3rem;
+    background: #efefef;
+    color: var(--dark);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark);
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: grey;
+}
+
+
+/* Input */
+
+#input-wrapper input{
+    border-radius: 8px 0 0 8px;
+    background: none;
+    border-color: var(--dark) !important;
+    border: solid 3px;
+
+}
+
+#input-wrapper button{
+    border-radius: 0 8px 8px 0;
+    border-left: none !important;
+    border-color: var(--dark) !important;
+    border: solid 3px;
+    background-color: var(--primary);
+    color: white;
+}
+
+#input-wrapper button:hover {
+    transform: scale(1.1);
+    border-radius: 8px;
+    border-left: solid 3px var(--dark) !important;
+}
+
+
+input[type="checkbox"]{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+input[type="checkbox"]:hover{
+    transform: scale(1.7);
+}
+
+/* Task */
+
+#task-wrapper{
+    max-height: 60vh;
+    display: none;
+}
+
+#task-wrapper, .task{
+    border-color: var(--dark) !important;
+}
+
+.delete-button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color: var(--red);
+}
+
+.task-completed{
+    background-color: var(--grey);
+    opacity: 0.7;
+}
+
+.task-completed b{
+    text-decoration: line-through;
+}
